@@ -1,0 +1,211 @@
+{
+	"info": {
+		"_postman_id": "c675b634-0070-4796-bd5d-2590d5a76da8",
+		"name": "Man's best friend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49517787",
+		"_collection_link": "https://p5td-rios-582015.postman.co/workspace/Denisse's-Team's-Workspace~ef28dea2-5490-4f2b-81d1-0e35616d6eba/collection/49517787-c675b634-0070-4796-bd5d-2590d5a76da8?action=share&source=collection_link&creator=49517787"
+	},
+	"item": [
+		{
+			"name": "Get all friends",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost/man_best_friend/furry_friends/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"man_best_friend",
+						"furry_friends",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get friend by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disableCookies": true,
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost/man_best_friend/furry_friends?id=9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"man_best_friend",
+						"furry_friends"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "9"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add a new friend",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "breed",
+							"value": "Poodle 3",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Poodle (standard) Poodles are brilliant and highly trainable. The breed is also widely used in mixed breeds",
+							"type": "text"
+						},
+						{
+							"key": "longevity_in_years",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "weight_in_kg",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "activity_level",
+							"value": "high activity level",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/man_best_friend/furry_friends",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"man_best_friend",
+						"furry_friends"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a friend",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/man_best_friend/furry_friends?id=123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"man_best_friend",
+						"furry_friends"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Friend",
+			"protocolProfileBehavior": {
+				"followOriginalHttpMethod": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "breed",
+							"value": "The Border Collie.",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "The Border Collie is one of the most intelligent and energetic dog breeds.",
+							"type": "text"
+						},
+						{
+							"key": "longevity_in_years",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "weight_in_kg",
+							"value": "12",
+							"type": "text"
+						},
+						{
+							"key": "activity_level",
+							"value": "high activity level.",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/man_best_friend/furry_friends?id=8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"man_best_friend",
+						"furry_friends"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
